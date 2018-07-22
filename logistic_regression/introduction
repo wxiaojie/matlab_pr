@@ -1,3 +1,8 @@
+本次应用问题是：对文本进行分类。
+特征采用词频。
+
+模型一：softmax regression
+
 softmax regression 是logitstic regression 的一般化，从二分类问题一般化的多分类问题。都是一种有监督的学习算法。
 （详见http://deeplearning.stanford.edu/wiki/index.php/Softmax_regression）
 对于有标签的训练集，(x, y)， x表示特征，y表示标签；测试的时候，则是通过假设函数，给定x，预测各个类别的概率。
@@ -8,5 +13,5 @@ theta = theta - alpha * gradient, 其中theta为函数的参数，alpha为步长
 上述代价函数往往会加上一个 weight decay 即L2 正则项，来对值较大的参数进行惩罚，使之构成一个凸函数。正则项也有防止过拟合的作用。
 
 
-本次应用问题是：对文本进行分类。
-特征采用词频。
+模型二：naive bayes
+
